@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+    api-gateway:
+        build: ./api-gateway
+        ports:
+            - "3000:3000"
+
+    telegram-bot:
+        build: ./services/telegram-bot
+        env_file:
+            - ./services/telegram-bot/.env
+
+    instagram-bot:
+        build: ./services/instagram-bot
+        env_file:
+            - ./services/instagram-bot/.env
+
+    dialog-service:
+        build: ./services/dialog-service
+        env_file:
+            - ./services/dialog-service/.env
+
+    database-service:
+        build: ./services/database-service
+        env_file:
+            - ./services/database-service/.env

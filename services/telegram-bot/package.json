@@ -1,5 +1,5 @@
 {
-  "name": "tg-chat-bot(microservices)",
+  "name": "api-gateway",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -11,14 +11,8 @@
   "description": "",
   "dependencies": {
     "axios": "^1.8.1",
-    "bullmq": "^5.41.7",
-    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongoose": "^8.12.0",
-    "openai": "^4.86.1",
-    "pm2": "^5.4.3",
-    "redis": "^4.7.0",
     "telegraf": "^4.16.3"
   },
   "devDependencies": {
